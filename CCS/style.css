@@ -1,0 +1,686 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+                                                        /* -- inicio styles HEADER-- */
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 2.5rem 2.5rem;
+}
+.header__menu{   
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    list-style-type: none;
+    display: flex;
+    position: relative;
+}
+.header__submenu{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1.5rem;
+    list-style-type: none;
+    position: absolute;
+}
+.header__nav a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 12px;
+}
+.header__nav a:hover{
+    background-color: tomato;
+    color: white;
+    list-style-type: none;
+}
+.header__nav ul li ul{
+    display: none;
+}
+.header__nav ul li a:hover + ul{
+    display: block;
+}
+.header__nav ul li ul:hover{
+    display: block;
+}
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: 2px solid black;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    align-self: center;
+}
+.btn:hover a{
+    background-color: tomato;
+    color: white;
+}                                                        /* -- fin styles HEADER -- */
+.main{
+    background-color: black;    
+}
+.companyLogo{
+    height: 12rem;
+    display: flex;
+    align-self: center;
+}                                                       /* -- inicio styles MAIN HERO -- */
+.hero__container{
+    position: relative;
+    height: 500px;
+}
+.hero__video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.hero__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: black;
+    padding: 2rem;
+    position: absolute;
+    top: 8rem;
+}
+.hero__slogan{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #00008b;
+    padding: 2rem;
+    position: absolute;
+    top: 17rem;
+}
+.hero__paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: white;
+    padding: 2rem;
+    text-align: justify;
+    position: absolute;
+    top: 24rem;
+}                                                   /* -- fin styles MAIN HERO -- */
+
+/* -- inicio styles para h1 -- */
+.main__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    font-style: italic;
+    color: rgb(20, 20, 156);
+    text-align: center;
+    padding-top: 5rem;
+}
+.bigTitle--center{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    font-style: italic;
+    color: rgb(20, 20, 156);
+    padding: 2rem;
+    margin: 2rem;    
+    display: flex;
+    align-items: center;
+}
+.bigTitle--service{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    font-style: italic;
+    color: rgb(20, 20, 156);
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    align-items: center;        
+}
+.bigTitle--service1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    font-style: italic;
+    color: white;
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    align-items: flex-start;        
+} /* -- fin styles para h1 -- */
+/* -- inicio styles para h2 -- */
+.commonTitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    padding: 1.5rem;
+} /* -- fin styles para h2 -- */
+/* -- inicio styles para h3 -- */
+.smallTitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    border: 2px solid black;
+}
+.smallTitle--left{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 3rem 0px 0px 3rem;
+    text-align: left;
+}/* -- fin styles para h3 -- */
+                                                    /* -- inicio styles MAIN SERVICIOS -- */
+.service{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    gap: 15px;
+    padding: 10px;
+}
+.service1{
+    grid-area: service1;
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 10;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service2{
+    grid-area: service2;
+    grid-column: 1 / span 6;
+    grid-row: 3 / span 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service3{
+    grid-area: service3;
+    grid-column: 1 / span 6;
+    grid-row: 5 / span 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service4{
+    grid-area: service4;
+    grid-column: 7 / span 4;
+    grid-row: 3 / span 4;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service__image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.service__btn{
+    text-decoration: none;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 2rem;
+    border: 2px solid white;
+    padding: 10px;
+    position: absolute;
+}
+.service__btn--up{
+    text-decoration: none;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 2rem;
+    border: 2px solid white;
+    padding: 10px;
+    position: absolute;
+    margin-bottom: 20rem;
+}
+.service__btn:hover{
+    background-color: #ffa07a;
+    color: black;
+    border: 2px solid black;
+}
+.service__btn--up:hover{
+    background-color: #ffa07a;
+    color: black;
+    border: 2px solid black;
+}
+.service__list{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 2rem;
+    list-style: circle;
+}                                                   /* -- fin styles MAIN SERVICIOS -- */
+                                                    /* -- inicio styles NUESTRO EQUIPO -- */
+.team{
+    background-color: lavender;
+}
+.hero__container--team{
+    background-image: url(../Assets/ourTeam-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.crew{
+    border-radius: 50%;
+    height: 18rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5rem;
+    margin-left: 3rem;
+}
+.paratext{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-align: justify;
+    margin: 3rem;
+}                                                   /* --  fin styles NUESTRO EQUIPO -- */
+                                                    /* -- inicio styles SERVICIOS -- */
+.mainAudit{
+    background-color: lavender;
+}
+.hero__container--audit{
+    background-image: url(../Assets/audit-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+}
+.hero__container--reg{
+    background-image: url(../Assets/registration-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.hero__container--pyme{
+    background-image: url(../Assets/assestment-image-original.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.hero__container--counsel{
+    background-image: url(../Assets/counseling-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.audit__container{
+    padding: 2rem;
+}
+.audit__container--text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.service__item{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 2rem 2rem 2rem 4rem;
+    padding: 1rem;
+    list-style: circle;
+}
+.service__item--text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}                                                   /* -- fin styles SERVICIOS -- */
+                                                    /* -- inicio styles CONTACTO -- */
+.contact{
+    padding: 0rem 15rem;
+}
+.contact--small{
+    padding: 0rem 35rem;
+}
+.fields{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 3rem 35rem 2rem 35rem;
+    padding: 2rem;
+    border: 0.5rem solid black;
+}
+.fields--small{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 3rem 25rem 2rem 25rem;
+    padding: 2rem;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: black;
+}
+.fields__container{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3px;
+}
+.label{
+    display: flex;
+    align-self: flex-start;
+}
+.iput{
+    display: flex;
+    align-self: flex-start;
+}
+.checkbox{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0rem 38rem 1rem;
+}
+.buttons{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0rem 35rem 0rem 35rem;
+    padding: 1rem 5rem 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttons__style{
+    padding: 0.5rem;
+    color: white;
+    font-weight: 700;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    background-color: black;
+    cursor: pointer;
+}
+                                                    /* -- fin styles CONTACTO -- */
+                                                    /* -- inicio styles FOOTER -- */
+.footer{
+    background-color:#5b92e5;
+    border: 1px solid black;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer__logo{
+    display: flex;
+    justify-content: center;
+}
+.footer__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer__paragraph{
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    border: 2px ridge black;
+    line-height: 2.5rem;
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+}
+.footerTitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-style: italic;
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 20px;
+    margin-right: 35px;
+}
+.footer__list{
+    display: flex;
+    align-self: flex-end;
+}
+.footer__item{
+    display: flex;
+    list-style-type: none; 
+    margin: 1rem;
+}                                                   /* -- inicio styles FOOTER -- */
+    
+/*-- MEDIAS QUERIES --*/
+
+@media screen and (min-width: 576px){
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .header__nav{
+        align-self: center;
+        order: 1;
+        padding-bottom: 9rem;
+    }
+    .companyLogo{
+        margin-bottom: 10px;
+    }
+    .btn{
+        margin-bottom: 10px;    
+    }
+    .hero__slogan{
+        top: 20rem;
+    }
+    .hero__paragraph{
+        top: 25rem;
+    }
+    .service{
+        grid-template-rows: repeat(8, 100px);
+    }
+    .service2, .service3{
+        grid-column: 1 / span 10;
+    }
+    .service4{
+        grid-row: 7 / span 2;
+        grid-column: 1 / span 10;
+    }
+    .main__title{
+        font-size: 4rem;
+        padding: 2rem 0rem;
+    }
+    .hero__container--team, .hero__container--pyme, .hero__container--counsel, .hero__container--reg, .hero__container--audit{
+        height: 35rem;
+    }
+    .crew{
+        height: 12rem;
+        margin-left: 1rem;
+    }
+    .audit__container{
+        padding: 1rem 2rem;
+    }
+    .smallTitle--left{
+        font-size: 2.5rem;
+    }
+    .paratext{
+        font-size: 2rem;
+    }
+    .fields--small{
+        margin: 1rem;
+    }
+    .checkbox {
+        margin: 1rem 1rem 1rem 4rem
+    }
+    .buttons{
+        margin: 0rem;
+    }
+    .contact--small {
+        padding: 0rem 10rem;
+    }   
+    .contact{
+        padding: 1rem 5rem;
+    }
+    .fields{
+        margin: 1rem;
+    }   
+    .service__btn--up{
+        margin-bottom: 12.5rem;
+    }
+    .footer {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    .footer__logo {
+        grid-area: footerLogo;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+    .footer__box{
+        grid-area: footerBox;
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+    .footer__container{
+        grid-area: footerContainer;
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+    }
+    .footerTitle{
+        padding-top: 10px;
+        padding-bottom: 1px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .header__nav{
+        align-self: center;
+        order: 1;
+        padding-bottom: 9rem;
+    }
+    .header__menu{
+        font-size: 2.5rem;
+    }
+    .companyLogo{
+        margin-bottom: 10px;
+    }
+    .btn{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    } 
+    .hero__slogan{
+        top: 20rem;
+    }
+    .hero__paragraph{
+        top: 25rem;
+    }
+    .service{
+        grid-template-rows: repeat(8, 100px);
+    }
+    .service2, .service3{
+        grid-column: 1 / span 10;
+    }
+    .service__btn--up{
+        margin-bottom: 14rem;
+    }
+    .service4{
+        grid-row: 7 / span 2;
+        grid-column: 1 / span 10;
+    }
+    .hero__container--team, .hero__container--pyme, .hero__container--counsel, .hero__container--reg, .hero__container--audit{
+        height: 35rem;
+    }
+    .main__title{
+        font-size: 4rem;
+        padding: 3rem;
+    }
+    .fields{
+        margin: 1rem;
+    }
+    .checkbox {
+        margin: 1rem 1rem 1rem 4rem
+    }
+    .buttons{
+        margin: 0rem;
+    }
+    .contact{
+        padding: 1rem 15rem;
+    }
+    .contact--small {
+        padding: 1rem 15rem;
+    }
+    .hero__container--reg {
+        justify-content: center;
+    }
+    .bigTitle--service1 {
+        color: white;
+        padding-top: 5rem;
+        align-items: flex-start;
+    }
+    .footer {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    .footer__logo {
+        grid-area: footerLogo;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+    .footer__box{
+        grid-area: footerBox;
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+    .footer__container{
+        grid-area: footerContainer;
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+    }
+    .footerTitle{
+        padding-top: 10px;
+        padding-bottom: 1px;
+    }
+}

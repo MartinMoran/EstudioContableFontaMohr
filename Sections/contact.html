@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CCS/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"> <img class="companyLogo" src="../Assets/companyLogo.jpeg" alt="Company-Logo"></a>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./ourTeam.html">Nuestro Equipo</a></li>
+                <li><a href="#">Servicios</a>
+                    <ul class="header__submenu">
+                        <li><a href="./counseling.html">Asesoramiento</a></li>
+                        <li><a href="./registration.html">Inscripciones</a></li>
+                        <li><a href="./pymeservices.html">Servicios a Pymes</a></li>
+                        <li><a href="./audit.html"">Auditorias</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="btn">
+            <a href="./clientsLogin.html">Login Clientes</a>
+        </button>
+    </header>
+    <main class="team">
+        <h1 class="main__title">Formulario de Contacto</h1>
+        <form class="contact" action="#" method="get">
+            <fieldset class="fields">
+                <div class="fields__container">
+                    <label class="label" for="name">Nombre:</label>
+                    <input class="input" type="text" name="user" id="name" placeholder="Escriba nombre completo">
+                </div>
+                <div class="fields__container">
+                    <label class="label" for="telnumber">Telefono:</label>
+                    <input class="input" type="number" name="telephone" id="telnumber" placeholder="Ingrese telefono">
+                </div>
+                <div class="fields__container">
+                    <label class="label" for="mail">Email:</label>
+                    <input class="input" type="email" name= user_email id=mail placeholder="correo electronico">
+                </div>
+                <div class="fields__container">
+                    <label class="label" for="service">Servicio:</label>
+                    <select class="input" name="service" id="selec_service">
+                        <option value="Blank"></option>
+                        <option value="Registration">Inscripciones</option>
+                        <option value="Audit">Auditoria</option>
+                        <option value="Entity">Persona fisica o Juridica</option>
+                        <option value="Other">Otros</option>
+                    </select>
+                </div>
+                <div class="fields__container">
+                    <label class="label" for="message">Mensaje:</label>
+                    <textarea class="input" name="" id="" cols="50" rows="10" placeholder="deje su mensaje"></textarea>
+                </div>
+            </fieldset>
+            <div class="checkbox">
+                <label for="no soy un robot">No soy un robot</label>
+                <input type="checkbox" name="Robot" id="no soy un robot" value="1">
+            </div>
+            <div class="buttons">
+                <input class="buttons__style" type="submit" value="ENVIAR">
+                <input class="buttons__style" type="reset" value="BORRAR TODO">
+                <input class="buttons__style" type="button" value="NO HACE NADA">
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="../index.html"><img class="companyLogo" src="../Assets/companyLogo.jpeg" alt="Company-Logo"></a>
+        </div>
+        <div class="footer__box">
+            <p class="footer__paragraph">
+                Estudio Contable FontaMohr <br>
+                Direccion Charcas 4260 <br>
+                Ciudad Autonoma de Buenos Aires, Argentina <br>
+                Tel: +5411-1234-5678 <br>
+                Email: info@estudiofm.com.ar
+            </p>
+        </div>
+        <div class="footer__container">
+            <h6 class="footerTitle">Seguinos en nuestras redes</h6>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="https://www.facebook.com/Estudio-Contable-FontaMohr-106578518232725/">
+                        <img src="../Assets/facebookLogoFinal.png" alt="Facebook-Logo"></a>
+                </li>
+                <li class="footer__item">
+                    <a href=" #"><img src="../Assets/instagramLogoFinal.png" alt="Instragram-Logo"></a>
+                </li>
+                <li class="footer__item">
+                    <a href=" #"><img src="../Assets/linkedInLogoFinal.png" alt="Linkedin-Logo"></a>
+                </li>
+                <li class="footer__item">
+                    <a href="#"><img src="../Assets/whatsappLogoFinal.png" alt="Whatsapp-Logo"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
