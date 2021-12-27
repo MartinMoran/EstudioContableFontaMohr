@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
@@ -12,7 +14,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="../index.html"> <img class="companyLogo" src="../Assets/companyLogo.jpeg" alt="Company-Logo"></a>
+        <a href="../index.html"> <img class="companyLogo bounce-in-top" src="../Assets/companyLogo.jpeg" alt="Company-Logo"></a>
         <nav class="header__nav">
             <ul class="header__menu">
                 <li><a href="../index.html">Inicio</a></li>
@@ -34,8 +36,9 @@
     </header>
     <main>
         <section class="mainAudit">
-            <div class="hero__container--counsel">
-                <h1 class="bigTitle--service">ASESORAMIENTO</h1>    
+            <div class="hero__container--counsel scale-in-hor-center">
+                <h1 class="bigTitle--service" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                data-aos-offset="0">ASESORAMIENTO</h1>    
             </div>
             <div class="audit__container">
                 <p class="audit__container--text">
@@ -110,5 +113,8 @@
             </ul>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
