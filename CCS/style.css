@@ -35,21 +35,26 @@ html {
     display: block;
     color: black;
     text-decoration: none;
-    padding: 5px 12px;
-}
+    padding: 3px 15px;
+}   
 .header__nav a:hover{
     background-color: darkblue;
     color: white;
     list-style-type: none;
-}
-.header__nav ul li ul{
-    display: none;
 }
 .header__nav ul li a:hover + ul{
     display: block;
 }
 .header__nav ul li ul:hover{
     display: block;
+}
+.nav{
+    font-size: 1.6rem;
+}
+.dropdown-menu{
+    border: 0px;
+    font-size: 1.3rem;
+    background-color: whitesmoke;
 }
 .btn {
     font-family: 'Roboto', sans-serif;
