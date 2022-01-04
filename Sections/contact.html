@@ -63,7 +63,7 @@
                                 </div>
                                 <div class="mb-3 form-check">
                                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                  <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+                                  <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
                                 </div>
                                 <button type="submit" class="btn btn-primary"><a href="#"></a>Ingresar</button>
                               </form>
@@ -73,46 +73,49 @@
             </div>
     </header>
     <main class="team">
-        <h1 class="main__title">Formulario de Contacto</h1>
-        <form class="contact" action="#" method="get">
-            <fieldset class="fields">
-                <div class="fields__container">
-                    <label class="label" for="name">Nombre:</label>
-                    <input class="input" type="text" name="user" id="name" placeholder="Escriba nombre completo">
+        <h1 class="main__title tracking-in-contract">Envianos tu consulta</h1>
+        <section class="contact">
+            <form class="form container">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese sus nombres">
                 </div>
-                <div class="fields__container">
-                    <label class="label" for="telnumber">Telefono:</label>
-                    <input class="input" type="number" name="telephone" id="telnumber" placeholder="Ingrese telefono">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Apellido </label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su apellido">
                 </div>
-                <div class="fields__container">
-                    <label class="label" for="mail">Email:</label>
-                    <input class="input" type="email" name= user_email id=mail placeholder="correo electronico">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
+                    placeholder="Ingrese su email">
                 </div>
-                <div class="fields__container">
-                    <label class="label" for="service">Servicio:</label>
-                    <select class="input" name="service" id="selec_service">
-                        <option value="Blank"></option>
-                        <option value="Registration">Inscripciones</option>
-                        <option value="Audit">Auditoria</option>
-                        <option value="Entity">Persona fisica o Juridica</option>
-                        <option value="Other">Otros</option>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Servicio</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione el Servicio</option>
+                        <option value="1">Asesoramiento</option>
+                        <option value="2">Inscripciones</option>
+                        <option value="3">Auditorias</option>
+                        <option value="4">Otros</option>
                     </select>
                 </div>
-                <div class="fields__container">
-                    <label class="label" for="message">Mensaje:</label>
-                    <textarea class="input" name="" id="" cols="50" rows="10" placeholder="deje su mensaje"></textarea>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
-            </fieldset>
-            <div class="checkbox">
-                <label for="no soy un robot">No soy un robot</label>
-                <input type="checkbox" name="Robot" id="no soy un robot" value="1">
+                <div class="mb-3 px-5 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+                </div>
+                <button type="submit" class="btn btn-dark">Enviar</button>
+            </form>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7890575751776!2d-58.42485068494825!3d
+                -34.58420368046455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb583fc3f85d7%3A0xef5ee2569e85054!2s
+                Charcas%204260%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1640888389651!5m2!1ses!2sar" width="500" height="450" 
+                style="border:0;" allowfullscreen="" loading="lazy">frameborder="0"></iframe>
             </div>
-            <div class="buttons">
-                <input class="buttons__style" type="submit" value="ENVIAR">
-                <input class="buttons__style" type="reset" value="BORRAR TODO">
-                <input class="buttons__style" type="button" value="NO HACE NADA">
-            </div>
-        </form>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__logo">

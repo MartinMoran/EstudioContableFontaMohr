@@ -126,11 +126,11 @@ html {
 .main__title{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 4rem;
     font-style: italic;
     color: rgb(20, 20, 156);
     text-align: center;
-    padding-top: 5rem;
+    padding: 3rem;
 }
 .bigTitle--center{
     font-family: 'Roboto', sans-serif;
@@ -151,8 +151,7 @@ html {
     color: rgb(20, 20, 156);
     padding: 2rem;
     margin: 2rem;
-    display: flex;
-    align-items: center;        
+    text-align: center;
 }
 .bigTitle--service1{
     font-family: 'Roboto', sans-serif;
@@ -162,8 +161,7 @@ html {
     color: white;
     padding: 2rem;
     margin: 2rem;
-    display: flex;
-    align-items: flex-start;        
+    text-align: center;     
 } /* -- fin styles para h1 -- */
 /* -- inicio styles para h2 -- */
 .commonTitle{
@@ -172,7 +170,6 @@ html {
     font-weight: bold;
     color: white;
     font-style: italic;
-    text-decoration: underline;
     text-align: center;
     padding: 1.5rem;
 } /* -- fin styles para h2 -- */
@@ -291,16 +288,7 @@ html {
 .team{
     background-color: lavender;
 }
-.hero__container--team{
-    background-image: url(../Assets/ourTeam-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50rem;
-    display: flex;
-    justify-content: center;
-}
-.container{
+.teamContainer{
     padding: 2rem;
     display: flex;
     flex-direction: row;
@@ -324,44 +312,8 @@ html {
 .mainAudit{
     background-color: lavender;
 }
-.hero__container--audit{
-    background-image: url(../Assets/audit-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50rem;
-    display: flex;
-    justify-content: center;
-}
-.hero__container--reg{
-    background-image: url(../Assets/registration-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-.hero__container--pyme{
-    background-image: url(../Assets/assestment-image-original.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-.hero__container--counsel{
-    background-image: url(../Assets/counseling-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
+.card-img{
+    height: 500px;
 }
 .audit__container{
     padding: 2rem;
@@ -387,69 +339,22 @@ html {
     margin-top: 1rem;
 }                                                   /* -- fin styles SERVICIOS -- */
                                                     /* -- inicio styles CONTACTO -- */
+.form{
+    font-size: 1.5rem;
+    background-color: lavenderblush;
+    padding: 1rem;
+    margin: 1rem;
+}
 .contact{
-    padding: 0rem 15rem;
-}
-.contact--small{
-    padding: 0rem 35rem;
-}
-.fields{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    margin: 3rem 35rem 2rem 35rem;
-    padding: 2rem;
-    border: 0.5rem solid black;
-}
-.fields--small{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    margin: 3rem 25rem 2rem 25rem;
-    padding: 2rem;
-    border-style: solid;
-    border-width: 0.5rem;
-    border-color: black;
-}
-.fields__container{
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 3px;
-}
-.label{
-    display: flex;
-    align-self: flex-start;
-}
-.iput{
-    display: flex;
-    align-self: flex-start;
-}
-.checkbox{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    margin: 0rem 38rem 1rem;
-}
-.buttons{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    margin: 0rem 35rem 0rem 35rem;
-    padding: 1rem 5rem 5rem;
     display: flex;
     justify-content: space-evenly;
+    background-color: lavenderblush;
+    padding: 2rem;
+    margin: 3rem;
 }
-.buttons__style{
-    padding: 0.5rem;
-    color: white;
-    font-weight: 700;
-    border-color: black;
-    border-style: solid;
-    border-width: 2px;
-    background-color: black;
-    cursor: pointer;
-}
-.buttons__style:hover{
-    background-color: white;
-    color: black;
+.mapa{
+    padding: 2rem;
+    height: 50px;
 }
                                                     /* -- fin styles CONTACTO -- */
                                                     /* -- inicio styles FOOTER -- */
@@ -507,7 +412,7 @@ html {
     margin: 1rem;
 }                                                   /* -- inicio styles FOOTER -- */
     
-/*-- MEDIAS QUERIES 
+/*-- MEDIAS QUERIES --*/
 
 @media screen and (min-width: 576px){
     .header {
@@ -709,8 +614,7 @@ html {
         padding-top: 10px;
         padding-bottom: 1px;
     }
-} 
---*/
+}
 
 /* -- Animaciones -- */
 
@@ -877,6 +781,92 @@ html {
     100% {
       -webkit-transform: scaleX(1);
               transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  
+  .text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        -webkit-animation-delay: 5s;
+        -webkit-animation-duration: 5s;        
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2021-12-30 15:5:55
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  .tracking-in-contract {
+	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2021-12-30 15:10:53
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-contract
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
       opacity: 1;
     }
   }
