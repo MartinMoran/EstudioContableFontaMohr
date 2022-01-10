@@ -1,0 +1,65 @@
+
+/* -- inicio styles para h1 -- */
+.main__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    font-style: italic;
+    color: rgb(20, 20, 156);
+    text-align: center;
+    padding: 3rem;
+}
+.bigTitle--center{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    font-style: italic;
+    color: rgb(20, 20, 156);
+    padding: 2rem;
+    margin: 2rem;    
+    display: flex;
+    align-items: center;
+}
+.bigTitle--service{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    font-style: italic;
+    color: rgb(20, 20, 156);
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+.bigTitle--service1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    font-style: italic;
+    color: white;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;     
+} /* -- fin styles para h1 -- */
+/* -- inicio styles para h2 -- */
+.commonTitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding: 1.5rem;
+} /* -- fin styles para h2 -- */
+/* -- inicio styles para h3 -- */
+.smallTitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    border: 2px solid black;
+}
+.smallTitle--left{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 3rem 0px 0px 3rem;
+    text-align: left;
+}/* -- fin styles para h3 -- */
