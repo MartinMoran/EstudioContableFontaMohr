@@ -1,3 +1,4 @@
+@import "./variables";
 
 .service{
     display: grid;
@@ -58,24 +59,24 @@
 .service__btn{
     text-decoration: none;
     background-color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
     font-weight: bold;
     letter-spacing: 1px;
     color: white;
     font-size: 2rem;
-    border: 2px solid white;
+    border: $borderSolidWhite;
     padding: 10px;
     position: absolute;
 }
 .service__btn--up{
     text-decoration: none;
     background-color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
     font-weight: bold;
     letter-spacing: 1px;
     color: white;
     font-size: 2rem;
-    border: 2px solid white;
+    border: $borderSolidWhite;
     padding: 10px;
     position: absolute;
     margin-bottom: 20rem;
@@ -83,15 +84,15 @@
 .service__btn:hover{
     background-color: #ffa07a;
     color: black;
-    border: 2px solid black;
+    border: $borderSolidBlack;
 }
 .service__btn--up:hover{
     background-color: #ffa07a;
     color: black;
-    border: 2px solid black;
+    border: $borderSolidBlack;
 }
 .service__list{
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
     font-size: 1.5rem;
     margin: 2rem;
     list-style: circle;

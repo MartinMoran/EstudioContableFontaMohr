@@ -1,3 +1,4 @@
+@import "./variables";
 
 .companyLogo{
     height: 12rem;
@@ -8,7 +9,7 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: $whitesmoke;
     padding: 2.5rem 2.5rem;
 
     &__nav a{
@@ -40,13 +41,13 @@
 .dropdown-menu{
     border: 0px;
     font-size: 1.3rem;
-    background-color: whitesmoke;
+    background-color: $whitesmoke;
 }
 
 .btn {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
     font-weight: bold;
-    border: 2px solid black;
+    border: $borderSolidBlack;
     font-size: 1.6rem;
     padding: 0.5rem 0.5rem;
     display: flex;
