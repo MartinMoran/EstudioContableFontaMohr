@@ -127,6 +127,9 @@ html {
   color: black;
   border: 2px solid black; }
 
+.header {
+  background-color: whitesmoke; }
+
 .companyLogo {
   height: 12rem;
   display: flex;
@@ -137,7 +140,7 @@ html {
   color: black;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem; }
+  font-size: 2rem; }
 
 .nav-item a:hover {
   background-color: darkblue;
@@ -150,13 +153,10 @@ html {
 .navbar ul li ul:hover {
   display: block; }
 
-.navbar {
-  font-size: 1.6rem; }
-
 .dropdown-menu {
   border: 0px;
-  font-size: 1.3rem;
-  background-color: white;
+  font-size: 1rem;
+  background-color: whitesmoke;
   color: black; }
 
 .service {
