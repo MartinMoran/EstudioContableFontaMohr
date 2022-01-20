@@ -1,0 +1,83 @@
+@import "./variables";
+
+.buttons {
+    font-family: $fontRoboto;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 5px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+$hover: (
+    colorDarkBlue: darkblue,
+    colorBlack: black,
+    colorOrange: #ffa07a,
+    colorWhite: white
+);
+
+.btn {
+    @extend .buttons;
+    border: $borderSolidBlack;    
+    bottom: 10rem;
+    left: 20px;
+    position: absolute;
+}
+
+.btn:hover{
+    background-color: map-get($hover, colorDarkBlue);
+    color: map-get($hover , colorWhite);
+    text-decoration: none;
+}
+
+.btn > a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover a{
+    background-color: map-get($hover, colorDarkBlue);
+    color: map-get($hover , colorWhite);
+}
+
+.btn--search{
+    @extend .buttons;
+    border: $borderSolidBlack;
+}
+
+.btn--modal{
+    @extend .buttons;
+    border: $borderSolidBlack;
+}
+
+.btn--form{
+    @extend .buttons;
+    border: $borderSolidBlack;
+}
+
+.service__btn{
+    @extend .buttons;
+    font-size: 2rem;
+    border: $borderSolidWhite;
+    position: absolute;
+}
+.service__btn--up{
+    @extend .buttons;
+    font-size: 2rem;
+    border: $borderSolidWhite;
+    position: absolute;
+    margin-bottom: 20rem;
+}
+.service__btn:hover{
+    background-color: map-get($hover, colorOrange);
+    color: map-get($hover, colorBlack);
+    border: $borderSolidBlack;
+}
+.service__btn--up:hover{
+    background-color: map-get($hover, colorOrange);
+    color: map-get($hover, colorBlack);
+    border: $borderSolidBlack;
+}

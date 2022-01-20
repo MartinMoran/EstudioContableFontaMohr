@@ -1,7 +1,8 @@
+@import "./variables";
 
 /* -- inicio styles para h1 -- */
 .main__title{
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
     font-weight: bold;
     font-size: 4rem;
     font-style: italic;
@@ -9,57 +10,58 @@
     text-align: center;
     padding: 3rem;
 }
-.bigTitle--center{
-    font-family: 'Roboto', sans-serif;
+.bigTitle {
+    font-family: $fontRoboto;
     font-weight: 700;
     font-size: 5rem;
     font-style: italic;
-    color: rgb(20, 20, 156);
     padding: 2rem;
-    margin: 2rem;    
+    margin: 2rem;
+}
+@mixin centrar{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
-.bigTitle--service{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 5rem;
-    font-style: italic;
+.bigTitle--center{
+    @extend .bigTitle;
     color: rgb(20, 20, 156);
-    padding: 2rem;
-    margin: 2rem;
-    text-align: center;
+    @include centrar
+}
+.bigTitle--service{
+    @extend .bigTitle;
+    color: rgb(20, 20, 156);
+    @include centrar
 }
 .bigTitle--service1{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 5rem;
-    font-style: italic;
+    @extend .bigTitle;
     color: white;
-    padding: 2rem;
-    margin: 2rem;
     text-align: center;     
-} /* -- fin styles para h1 -- */
+} 
+/* -- fin styles para h1 -- */
 /* -- inicio styles para h2 -- */
 .commonTitle{
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
     font-size: 3rem;
     font-weight: bold;
     color: white;
     font-style: italic;
     text-align: center;
     padding: 1.5rem;
-} /* -- fin styles para h2 -- */
+} 
+/* -- fin styles para h2 -- */
 /* -- inicio styles para h3 -- */
 .smallTitle{
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontRoboto;
     font-size: 2rem;
     position: absolute;
     border: $borderSolidBlack;
 }
-.smallTitle--left{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    margin: 3rem 0px 0px 3rem;
-    text-align: left;
-}/* -- fin styles para h3 -- */
+.smallTitle--center{
+    font-family: $fontRoboto;
+    color: yellow;
+    font-size: 2.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+/* -- fin styles para h3 -- */

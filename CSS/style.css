@@ -6,50 +6,87 @@
 html {
   font-size: 62.5%; }
 
-.companyLogo {
-  height: 12rem;
-  display: flex;
-  align-self: center; }
-
-.header {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: space-between;
-  background-color: whitesmoke;
-  padding: 2.5rem 2.5rem; }
-  .header__nav a {
-    display: block;
-    color: black;
-    text-decoration: none;
-    padding: 3px 15px; }
-  .header__nav a:hover {
-    background-color: darkblue;
-    color: white;
-    list-style-type: none; }
-  .header__nav ul li a:hover + ul {
-    display: block; }
-  .header__nav ul li ul:hover {
-    display: block; }
-
-.nav {
-  font-size: 1.6rem; }
-
-.dropdown-menu {
-  border: 0px;
-  font-size: 1.3rem;
-  background-color: whitesmoke; }
-
-.btn {
+/* -- inicio styles para h1 -- */
+.main__title {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  border: 2px solid black;
-  font-size: 1.6rem;
-  padding: 0.5rem 0.5rem;
+  font-size: 4rem;
+  font-style: italic;
+  color: #14149c;
+  text-align: center;
+  padding: 3rem; }
+
+.bigTitle, .bigTitle--center, .bigTitle--service, .bigTitle--service1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  font-style: italic;
+  padding: 2rem;
+  margin: 2rem; }
+
+.bigTitle--center {
+  color: #14149c;
   display: flex;
-  align-self: center; }
+  justify-content: center;
+  align-items: center; }
+
+.bigTitle--service {
+  color: #14149c;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.bigTitle--service1 {
+  color: white;
+  text-align: center; }
+
+/* -- fin styles para h1 -- */
+/* -- inicio styles para h2 -- */
+.commonTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: 1.5rem; }
+
+/* -- fin styles para h2 -- */
+/* -- inicio styles para h3 -- */
+.smallTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  position: absolute;
+  border: 2px solid black; }
+
+.smallTitle--center {
+  font-family: "Roboto", sans-serif;
+  color: yellow;
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center; }
+
+/* -- fin styles para h3 -- */
+.buttons, .btn, .btn--search, .btn--modal, .btn--form, .service__btn, .service__btn--up {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 5px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: black; }
+
+.btn {
+  border: 2px solid black;
+  bottom: 10rem;
+  left: 20px;
+  position: absolute; }
 
 .btn:hover {
   background-color: darkblue;
+  color: white;
   text-decoration: none; }
 
 .btn > a {
@@ -57,7 +94,70 @@ html {
   color: black; }
 
 .btn:hover a {
+  background-color: darkblue;
   color: white; }
+
+.btn--search {
+  border: 2px solid black; }
+
+.btn--modal {
+  border: 2px solid black; }
+
+.btn--form {
+  border: 2px solid black; }
+
+.service__btn {
+  font-size: 2rem;
+  border: 2px solid white;
+  position: absolute; }
+
+.service__btn--up {
+  font-size: 2rem;
+  border: 2px solid white;
+  position: absolute;
+  margin-bottom: 20rem; }
+
+.service__btn:hover {
+  background-color: #ffa07a;
+  color: black;
+  border: 2px solid black; }
+
+.service__btn--up:hover {
+  background-color: #ffa07a;
+  color: black;
+  border: 2px solid black; }
+
+.companyLogo {
+  height: 12rem;
+  display: flex;
+  align-self: center; }
+
+.navbar-nav a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem; }
+
+.nav-item a:hover {
+  background-color: darkblue;
+  color: white;
+  list-style-type: none; }
+
+.navbar ul li a:hover + ul {
+  display: block; }
+
+.navbar ul li ul:hover {
+  display: block; }
+
+.navbar {
+  font-size: 1.6rem; }
+
+.dropdown-menu {
+  border: 0px;
+  font-size: 1.3rem;
+  background-color: white;
+  color: black; }
 
 .service {
   display: grid;
@@ -115,46 +215,148 @@ html {
 .service__image:hover {
   transform: scale(1.2); }
 
-.service__btn {
-  text-decoration: none;
-  background-color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: white;
-  font-size: 2rem;
-  border: 2px solid white;
-  padding: 10px;
-  position: absolute; }
-
-.service__btn--up {
-  text-decoration: none;
-  background-color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: white;
-  font-size: 2rem;
-  border: 2px solid white;
-  padding: 10px;
-  position: absolute;
-  margin-bottom: 20rem; }
-
-.service__btn:hover {
-  background-color: #ffa07a;
-  color: black;
-  border: 2px solid black; }
-
-.service__btn--up:hover {
-  background-color: #ffa07a;
-  color: black;
-  border: 2px solid black; }
-
 .service__list {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   margin: 2rem;
   list-style: circle; }
+
+.main {
+  background-color: black; }
+
+.hero__container {
+  position: relative;
+  height: 500px; }
+
+.hero__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute; }
+
+.hero__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: black;
+  padding: 2rem;
+  position: absolute;
+  top: 8rem; }
+
+.hero__slogan {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #00008b;
+  padding: 2rem;
+  position: absolute;
+  top: 17rem; }
+
+.hero__paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: white;
+  padding: 2rem;
+  text-align: justify;
+  position: absolute;
+  top: 24rem; }
+
+.team {
+  background-color: lavender; }
+
+.teamContainer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+
+.crew {
+  border-radius: 50%;
+  height: 15rem;
+  border: 0.5rem solid black; }
+
+.paratext {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 5rem; }
+
+.mainAudit {
+  background-color: lavender; }
+
+.audit__container {
+  padding: 2rem; }
+
+.audit__container--text {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  padding: 1rem; }
+
+.service__item {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 2rem 2rem 2rem 4rem;
+  padding: 1rem;
+  list-style: circle; }
+
+.service__item--text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-top: 1rem; }
+
+.imgHeroServiceAudit {
+  width: 100%;
+  background-image: url(../Assets/Hero/Audit.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+.imgHeroServiceCounseling {
+  width: 100%;
+  background-image: url(../Assets/Hero/Counseling.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+.imgHeroServicePymeServices {
+  width: 100%;
+  background-image: url(../Assets/Hero/PymeServices.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+.imgHeroServiceRegistration {
+  width: 100%;
+  background-image: url(../Assets/Hero/Registration.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center; }
 
 .form {
   font-size: 1.5rem;
@@ -266,7 +468,7 @@ html {
     margin: 1rem; }
   .checkbox {
     margin: 1rem 1rem 1rem 4rem; }
-  .buttons {
+  .buttons, .btn, .btn--search, .btn--modal, .btn--form, .service__btn, .service__btn--up {
     margin: 0rem; }
   .contact--small {
     padding: 0rem 10rem; }
@@ -368,162 +570,6 @@ html {
     padding-top: 10px;
     padding-bottom: 1px; } }
 
-.main {
-  background-color: black; }
-
-.hero__container {
-  position: relative;
-  height: 500px; }
-
-.hero__video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute; }
-
-.hero__title {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 4rem;
-  color: black;
-  padding: 2rem;
-  position: absolute;
-  top: 8rem; }
-
-.hero__slogan {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  color: #00008b;
-  padding: 2rem;
-  position: absolute;
-  top: 17rem; }
-
-.hero__paragraph {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  color: white;
-  padding: 2rem;
-  text-align: justify;
-  position: absolute;
-  top: 24rem; }
-
-.team {
-  background-color: lavender; }
-
-.teamContainer {
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
-.crew {
-  border-radius: 50%;
-  height: 15rem;
-  border: 0.5rem solid black;
-  margin-left: 3rem; }
-
-.paratext {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  text-align: justify;
-  margin: 3rem; }
-
-.mainAudit {
-  background-color: lavender; }
-
-.card-img {
-  height: 500px; }
-
-.audit__container {
-  padding: 2rem; }
-
-.audit__container--text {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.5rem;
-  padding: 1rem; }
-
-.service__item {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 2rem 2rem 2rem 4rem;
-  padding: 1rem;
-  list-style: circle; }
-
-.service__item--text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  padding: 1rem;
-  margin-top: 1rem; }
-
-/* -- inicio styles para h1 -- */
-.main__title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 4rem;
-  font-style: italic;
-  color: #14149c;
-  text-align: center;
-  padding: 3rem; }
-
-.bigTitle--center {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 5rem;
-  font-style: italic;
-  color: #14149c;
-  padding: 2rem;
-  margin: 2rem;
-  display: flex;
-  align-items: center; }
-
-.bigTitle--service {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 5rem;
-  font-style: italic;
-  color: #14149c;
-  padding: 2rem;
-  margin: 2rem;
-  text-align: center; }
-
-.bigTitle--service1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 5rem;
-  font-style: italic;
-  color: white;
-  padding: 2rem;
-  margin: 2rem;
-  text-align: center; }
-
-/* -- fin styles para h1 -- */
-/* -- inicio styles para h2 -- */
-.commonTitle {
-  font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  font-style: italic;
-  text-align: center;
-  padding: 1.5rem; }
-
-/* -- fin styles para h2 -- */
-/* -- inicio styles para h3 -- */
-.smallTitle {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  position: absolute;
-  border: 2px solid black; }
-
-.smallTitle--left {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  margin: 3rem 0px 0px 3rem;
-  text-align: left; }
-
-/* -- fin styles para h3 -- */
 @keyframes movLoop {
   50% {
     transform: translateX(5px); } }

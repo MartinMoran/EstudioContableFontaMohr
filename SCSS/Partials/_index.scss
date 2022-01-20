@@ -49,24 +49,27 @@
     flex-direction: row;
     align-items: center;
 }
+.imageBox{
+    @include centrar;
+    padding: 2rem;
+}
 .crew{
     border-radius: 50%;
     height: 15rem;
     border: 0.5rem solid black;
-    margin-left: 3rem;
 }
 .paratext{
     font-family: $fontRoboto;
+    color: white;
     font-size: 2rem;
-    text-align: justify;
-    margin: 3rem;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 5rem;
 }                                                   
 .mainAudit{
     background-color: lavender;
 }
-.card-img{
-    height: 500px;
-}
+
 .audit__container{
     padding: 2rem;
 }
@@ -89,4 +92,18 @@
     font-size: 1.5rem;
     padding: 1rem;
     margin-top: 1rem;
+}
+
+@each $service in Audit, Counseling, PymeServices, Registration,  {
+    .imgHeroService#{$service} {
+        width: 100%;
+        background-image: url(../Assets/Hero/#{$service}.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 500px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -14,63 +14,38 @@
 </head>
 <body>
     <header class="header">
-        <a href="../index.html"> <img class="companyLogo bounce-in-top" src="../Assets/companyLogo.jpeg" alt="Company-Logo"></a>
-        <nav class="header__nav">
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./ourTeam.html">Nuestro Equipo</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Servicios</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a class="nav-link" href="./counseling.html">Asesoramiento</a></li>
-                        <li><a class="nav-link" href="./registration.html">Inscripciones</a></li>
-                        <li><a class="nav-link" href="./pymeservices.html">Servicios a Pymes</a></li>
-                        <li><a class="nav-link" href="./audit.html">Auditorias</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a href="../index.html"> <img class="companyLogo bounce-in-top ps-5" src="../Assets/companyLogo.jpeg" alt="Company-Logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item px-5">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item px-5">
+                    <a class="nav-link" href="./nuestrosProfesionales.html">Nuestro Equipo</a>
+                  </li>
+                  <li class="nav-item dropdown px-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./asesoramiento.html">Asesoramiento</a></li>
+                      <li><a class="dropdown-item" href="./inscripciones.html">Inscripciones</a></li>
+                      <li><a class="dropdown-item" href="./serviciosPyme.html">Servicios a Pymes</a></li>
+                      <li><a class="dropdown-item" href="./auditorias.html">Auditorias</a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Acceso Clientes
-            </button>
-      
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Ingrese Email y Password</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label">Email</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                  <div id="emailHelp" class="form-text">Nunca compartiremos su email con nadie mas</div>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="mb-3 form-check">
-                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                  <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary"><a href="#"></a>Ingresar</button>
-                              </form>
-                        </div>
-                    </div>
-                </div>
+                  </li>
+                  <li class="nav-item px-5">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
     </header>
     <main class="team">
         <h1 class="main__title tracking-in-contract">Envianos tu consulta</h1>
@@ -107,7 +82,7 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
                 </div>
-                <button type="submit" class="btn btn-dark">Enviar</button>
+                <button type="submit" class="btn--form btn-dark">Enviar</button>
             </form>
             <div class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7890575751776!2d-58.42485068494825!3d

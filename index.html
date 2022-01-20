@@ -5,76 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos un estudio contable de jovenes profesionales que proporciona soluciones
+    integrales a pequeñas y medianas empresas en CABA y GBA">
+    <meta name="keywords" content="Impuestos, Contabilidad, Gestion, Sociedades, AFIP"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Estudio Contable FontaMohr</title>
+    <title>Estudio Contable e Impositivo FontaMohr</title>
 </head>
 
 <body>
     <header class="header">
-        <a href="./index.html"> <img class="companyLogo bounce-in-top" src="./Assets/companyLogo.jpeg" alt="Company-Logo"></a>
-        <nav class="header__nav">
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./Sections/ourTeam.html">Nuestro Equipo</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Servicios</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a class="nav-link" href="./Sections/counseling.html">Asesoramiento</a></li>
-                        <li><a class="nav-link" href="./Sections/registration.html">Inscripciones</a></li>
-                        <li><a class="nav-link" href="./Sections/pymeservices.html">Servicios a Pymes</a></li>
-                        <li><a class="nav-link" href="./Sections/audit.html">Auditorias</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a href="./index.html"> <img class="companyLogo bounce-in-top ps-5" src="./Assets/companyLogo.jpeg" alt="Company-Logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item px-5">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item px-5">
+                    <a class="nav-link" href="./Servicios/nuestrosProfesionales.html">Nuestro Equipo</a>
+                  </li>
+                  <li class="nav-item dropdown px-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./Servicios/asesoramiento.html">Asesoramiento</a></li>
+                      <li><a class="dropdown-item" href="./Servicios/inscripciones.html">Inscripciones</a></li>
+                      <li><a class="dropdown-item" href="./Servicios/serviciosPyme.html">Servicios a Pymes</a></li>
+                      <li><a class="dropdown-item" href="./Servicios/auditorias.html">Auditorias</a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./Sections/contact.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Acceso Clientes
-            </button>
-      
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Ingrese Email y Password</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label">Email</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                  <div id="emailHelp" class="form-text">Nunca compartiremos su email con nadie mas</div>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="mb-3 form-check">
-                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                  <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary"><a href="#"></a>Ingresar</button>
-                              </form>
-                        </div>
-                    </div>
-                </div>
+                  </li>
+                  <li class="nav-item px-5">
+                    <a class="nav-link" href="./Servicios/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
     </header>
     <main class="main">
         <section class="hero">
@@ -88,24 +67,57 @@
                     Brindamos las mejores soluciones para su empresa,
                     ayudando a nuestros clientes en el crecimiento de sus emprendimientos.
                 </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark animate__animated animate__bounceInRight" data-bs-toggle="modal" 
+                data-bs-target="#staticBackdrop">Acceso Clientes 
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Ingrese Email y Password</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Nunca compartiremos su email con nadie mas</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
+                                    </div>
+                                    <button type="submit" class="btn--modal btn-primary"><a href="#"></a>Ingresar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <h2 class="commonTitle title text-focus-in">SERVICIOS</h2>
+        <h3 class="commonTitle title text-focus-in">Servicios Contables e Impositivos</h3>
         <section class="service">
             <div class="service1">
-                <img class="service__image" src="./Assets/counseling-image.jpg" alt="Counseling"></a>
+                <img class="service__image" src="./Assets/Hero/Counseling.jpg" alt="Counseling"></a>
                 <a href="./Sections/counseling.html" class="service__btn">ASESORAMIENTO</a>
             </div>
             <div class="service2">
-                <img class="service__image" src="./Assets/registration-image.jpg" alt="Registration">
+                <img class="service__image" src="./Assets/Hero/Registration.jpg" alt="Registration">
                 <a href="./Sections/registration.html" class="service__btn--up">INSCRIPCIONES</a>
             </div>
             <div class="service3">
-                <img class="service__image" src="./Assets/assestment-image-original.png" alt="Pymes">>
+                <img class="service__image" src="./Assets/Hero/PymeServices.jpg" alt="Pymes">>
                 <a href="./Sections/pymeservices.html" class="service__btn">SERVICIOS A PYMES</a>
             </div>
             <div class="service4">
-                <img class="service__image" src="./Assets/audit-image.jpg"
+                <img class="service__image" src="./Assets/Hero/Audit.jpg"
                         alt="Audit">
                 <a href="./Sections/audit.html" class="service__btn">AUDITORIAS</a>
             </div>
