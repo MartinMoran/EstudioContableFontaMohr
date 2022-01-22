@@ -31,12 +31,12 @@
 .bigTitle--service{
     @extend .bigTitle;
     color: rgb(20, 20, 156);
-    @include centrar
+    @include centrar;
 }
 .bigTitle--service1{
     @extend .bigTitle;
     color: white;
-    text-align: center;     
+    text-align: center;   
 } 
 /* -- fin styles para h1 -- */
 /* -- inicio styles para h2 -- */
@@ -65,3 +65,15 @@
     text-align: center;
 }
 /* -- fin styles para h3 -- */
+
+.footerTitle{
+    font-family: $fontRoboto;
+    font-size: 2rem;
+    color: white;
+    font-style: italic;
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 20px;
+    margin-right: 35px;
+    animation: movLoop 0.5s infinite;
+}

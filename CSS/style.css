@@ -67,6 +67,17 @@ html {
   text-align: center; }
 
 /* -- fin styles para h3 -- */
+.footerTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: white;
+  font-style: italic;
+  display: flex;
+  align-self: flex-end;
+  padding-bottom: 20px;
+  margin-right: 35px;
+  animation: movLoop 0.5s infinite; }
+
 .buttons, .btn, .btn--search, .btn--modal, .btn--form, .service__btn, .service__btn--up {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -292,12 +303,14 @@ html {
   background-color: lavender; }
 
 .audit__container {
-  padding: 2rem; }
+  padding: 1rem; }
 
 .audit__container--text {
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
-  padding: 1rem; }
+  padding: 1rem;
+  margin-bottom: 0px;
+  text-align: justify; }
 
 .service__item {
   font-family: "Roboto", sans-serif;
@@ -368,8 +381,7 @@ html {
   display: flex;
   justify-content: space-evenly;
   background-color: lavenderblush;
-  padding: 2rem;
-  margin: 3rem; }
+  padding: 2rem; }
 
 .mapa {
   padding: 2rem; }
@@ -383,13 +395,6 @@ html {
   justify-items: center;
   align-items: center;
   gap: 10px; }
-  .footer__logo {
-    display: flex;
-    justify-content: center; }
-  .footer__box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
   .footer__paragraph {
     padding: 1rem;
     font-family: "Roboto", sans-serif;
@@ -397,6 +402,22 @@ html {
     color: white;
     border: 2px ridge black;
     line-height: 2.5rem; }
+  .footer__list {
+    display: flex;
+    align-self: flex-end; }
+  .footer__item {
+    display: flex;
+    list-style-type: none;
+    margin: 1rem; }
+
+.footer__logo {
+  display: flex;
+  justify-content: center; }
+
+.footer__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .footer__container {
   display: flex;
@@ -404,37 +425,7 @@ html {
   justify-content: flex-end;
   align-content: center; }
 
-.footerTitle {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  color: white;
-  font-style: italic;
-  display: flex;
-  align-self: flex-end;
-  padding-bottom: 20px;
-  margin-right: 35px;
-  animation: movLoop 0.5s infinite; }
-
-.footer__list {
-  display: flex;
-  align-self: flex-end; }
-
-.footer__item {
-  display: flex;
-  list-style-type: none;
-  margin: 1rem; }
-
-@media screen and (max-width: 576px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .header__nav {
-    align-self: center;
-    order: 1;
-    padding-bottom: 9rem; }
-  .companyLogo {
-    margin-bottom: 10px; }
+@media screen and (max-width: 450px) {
   .btn {
     margin-bottom: 10px; }
   .hero__title {
@@ -460,20 +451,25 @@ html {
     margin-left: 1rem; }
   .audit__container {
     padding: 1rem 2rem; }
+  .audit__container--text {
+    font-size: 2rem; }
+  .bigTitle--service {
+    font-size: 2.5rem; }
+  .bigTitle--service1 {
+    font-size: 2.5rem;
+    padding-top: 5rem;
+    align-items: flex-start; }
   .smallTitle--left {
     font-size: 2.5rem; }
   .paratext {
     font-size: 2rem; }
-  .fields--small {
-    margin: 1rem; }
-  .checkbox {
-    margin: 1rem 1rem 1rem 4rem; }
   .buttons, .btn, .btn--search, .btn--modal, .btn--form, .service__btn, .service__btn--up {
     margin: 0rem; }
-  .contact--small {
-    padding: 0rem 10rem; }
   .contact {
     padding: 1rem 5rem; }
+  iframe {
+    width: 350px;
+    height: 300px; }
   .fields {
     margin: 1rem; }
   .service__btn--up {
@@ -493,27 +489,29 @@ html {
     grid-area: footerBox;
     grid-column: 2 / span 1;
     grid-row: 1 / span 1; }
+  .footer__paragraph {
+    font-size: 15px; }
   .footer__container {
     grid-area: footerContainer;
     grid-column: 1 / span 2;
     grid-row: 2 / span 1; }
   .footerTitle {
     padding-top: 10px;
-    padding-bottom: 1px; } }
+    padding-bottom: 1px; }
+  .imgHeroServiceAudit {
+    min-height: 350px; }
+  .imgHeroServiceCounseling {
+    min-height: 350px; }
+  .imgHeroServicePymeServices {
+    min-height: 350px; }
+  .imgHeroServiceRegistration {
+    min-height: 350px; } }
 
 @media screen and (max-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: column;
+  .navbar {
+    padding: 1rem 5rem; }
+  .navbar-nav {
     align-items: center; }
-  .header__nav {
-    align-self: center;
-    order: 1;
-    padding-bottom: 9rem; }
-  .header__menu {
-    font-size: 2.5rem; }
-  .companyLogo {
-    margin-bottom: 10px; }
   .btn {
     font-size: 1.5rem;
     margin-bottom: 10px; }
@@ -523,37 +521,36 @@ html {
     top: 25rem; }
   .service {
     grid-template-rows: repeat(8, 100px); }
-  .service2, .service3 {
+  .service2 {
     grid-column: 1 / span 10; }
-  .service__btn--up {
-    margin-bottom: 14rem; }
+  .service3 {
+    grid-column: 1 / span 10; }
   .service4 {
     grid-row: 7 / span 2;
     grid-column: 1 / span 10; }
-  .main__title {
-    font-size: 4rem;
-    padding: 3rem; }
+  .service__btn--up {
+    margin-bottom: 14rem; }
+  .crew {
+    height: 12rem; }
+  .contact--small {
+    padding: 1rem 15rem; }
   .contact {
     flex-direction: column;
     padding: 5rem; }
   .mapa {
     display: flex;
     align-self: center; }
-  .contact--small {
-    padding: 1rem 15rem; }
-  .bigTitle--service1 {
-    color: white;
-    padding-top: 5rem;
-    align-items: flex-start; }
-  .crew {
-    height: 12rem; }
+  iframe {
+    width: 450px;
+    height: 400px; }
   .footer {
-    padding: 15px;
-    display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
-    gap: 10px;
     justify-content: space-evenly; }
+  .footer__container {
+    grid-area: footerContainer;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1; }
   .footer__logo {
     grid-area: footerLogo;
     grid-column: 1 / span 1;
@@ -562,13 +559,15 @@ html {
     grid-area: footerBox;
     grid-column: 2 / span 1;
     grid-row: 1 / span 1; }
-  .footer__container {
-    grid-area: footerContainer;
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 1; }
   .footerTitle {
     padding-top: 10px;
-    padding-bottom: 1px; } }
+    padding-bottom: 1px; }
+  .bigTitle--service1 {
+    padding-top: 5rem;
+    align-items: flex-start; }
+  .main__title {
+    font-size: 4rem;
+    padding: 3rem; } }
 
 @keyframes movLoop {
   50% {

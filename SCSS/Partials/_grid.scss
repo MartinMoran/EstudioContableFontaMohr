@@ -7,7 +7,6 @@
     align-items: center;
     overflow: hidden;
 }
-
 .service{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -25,19 +24,20 @@
     grid-area: service2;
     grid-column: 1 / span 6;
     grid-row: 3 / span 2;
-    @include gridImg
+    @include gridImg;
+    
 }
 .service3{
     grid-area: service3;
     grid-column: 1 / span 6;
     grid-row: 5 / span 2;
-    @include gridImg
+    @include gridImg;
 }
 .service4{
     grid-area: service4;
     grid-column: 7 / span 4;
     grid-row: 3 / span 4;
-    @include gridImg
+    @include gridImg;
 }
 .service__image{
     height: 100%;
@@ -48,7 +48,6 @@
 .service__image:hover{
     transform: scale(1.2);
 }
-
 .service__list{
     font-family: $fontRoboto;
     font-size: 1.5rem;
