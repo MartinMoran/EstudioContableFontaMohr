@@ -412,8 +412,7 @@ html {
 
 .footer__logo {
   display: flex;
-  justify-content: center;
-  height: 10px; }
+  justify-content: center; }
 
 .footer__box {
   display: flex;
@@ -468,6 +467,9 @@ html {
     margin: 0rem; }
   .contact {
     padding: 1rem 5rem; }
+  .mapa {
+    display: flex;
+    align-self: center; }
   iframe {
     width: 350px;
     height: 300px; }
@@ -485,13 +487,14 @@ html {
   .footer__logo {
     grid-area: footerLogo;
     grid-column: 1 / span 1;
-    grid-row: 1 / span 1; }
+    grid-row: 1 / span 1;
+    height: 10px; }
   .footer__box {
     grid-area: footerBox;
     grid-column: 2 / span 1;
     grid-row: 1 / span 1; }
   .footer__paragraph {
-    font-size: 15px; }
+    font-size: 12px; }
   .footer__container {
     grid-area: footerContainer;
     grid-column: 1 / span 2;
