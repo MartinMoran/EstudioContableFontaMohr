@@ -412,7 +412,8 @@ html {
 
 .footer__logo {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  height: 10px; }
 
 .footer__box {
   display: flex;
