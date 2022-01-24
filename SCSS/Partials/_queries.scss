@@ -63,6 +63,11 @@
         padding: 1rem 5rem;
     }
 
+    .mapa{
+        display: flex;
+        align-self: center;
+    }
+
     iframe{
         width: 350px;
         height: 300px;
@@ -86,6 +91,7 @@
         grid-area: footerLogo;
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
+        height: 10px;
     }
     .footer__box{
         grid-area: footerBox;
@@ -94,7 +100,7 @@
     }
 
     .footer__paragraph{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .footer__container{
