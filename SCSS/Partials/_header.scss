@@ -18,10 +18,9 @@
     font-size: 2rem;
 }
 
-.nav-item a:hover{
-    background-color: darkblue;
+.navbar-nav a:hover{
+    background-color: tomato;
     color: white;
-    list-style-type: none;
 }
 
 .navbar ul li a:hover + ul{
