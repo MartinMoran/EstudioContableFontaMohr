@@ -383,7 +383,7 @@ html {
   padding: 2rem; }
 
 .mapa {
-  padding: 2rem; }
+  padding: 1rem; }
 
 .footer {
   background-color: #5b92e5;
@@ -424,9 +424,31 @@ html {
   justify-content: flex-end;
   align-content: center; }
 
+@media screen and (min-width: 320px) {
+  .companyLogo {
+    height: 10rem; }
+  .hero__title {
+    font-size: 2rem; }
+  .hero__slogan {
+    font-size: 1.8rem;
+    top: 18rem; }
+  .hero__paragraph {
+    font-size: 1.6rem; }
+  .btn {
+    bottom: 5rem; }
+  .service__btn, .service__btn--up {
+    font-size: 1.5rem; }
+  .smallTitle--center {
+    font-size: 2rem; }
+  .paratext {
+    font-size: 1.5rem; }
+  .footer__paragraph {
+    font-size: 8px; } }
+
 @media screen and (max-width: 450px) {
   .btn {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    bottom: 7rem; }
   .hero__title {
     font-size: 3rem; }
   .hero__slogan {
