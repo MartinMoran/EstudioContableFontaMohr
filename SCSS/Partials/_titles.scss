@@ -30,13 +30,15 @@
 }
 .bigTitle--service{
     @extend .bigTitle;
-    color: rgb(20, 20, 156);
-    @include centrar;
+    color: white;
+    background-color: hsla(0deg, 0%, 0%, 0.5);
 }
 .bigTitle--service1{
     @extend .bigTitle;
     color: white;
-    text-align: center;   
+    background-color: hsla(0deg, 0%, 0%, 0.5);
+    text-align: center;
+
 } 
 /* -- fin styles para h1 -- */
 /* -- inicio styles para h2 -- */

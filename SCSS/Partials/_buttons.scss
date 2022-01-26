@@ -81,3 +81,6 @@ $hover: (
     color: map-get($hover, colorBlack);
     border: $borderSolidBlack;
 }
+.btn--form:hover{
+    background-color: map-get($hover, colorDarkBlue);
+}

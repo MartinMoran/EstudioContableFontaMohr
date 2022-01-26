@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px){
+@media screen and (max-width: 320px){
     .companyLogo{
         height: 10rem;
     }
@@ -81,12 +81,14 @@
 
     .bigTitle--service {
         font-size: 2.5rem;
+        margin: 1rem;
+        padding: 1rem;
     }
 
     .bigTitle--service1 {
         font-size: 2.5rem;
-        padding-top: 5rem;
-        align-items: flex-start;
+        margin: 1rem;
+        padding: 1rem;
     }
 
     .smallTitle--left{
@@ -251,9 +253,12 @@
         padding-bottom: 1px;
     }
 
+    .bigTitle--service{
+        font-size: 3rem;
+    }
+
     .bigTitle--service1 {
-        padding-top: 5rem;
-        align-items: flex-start;
+        font-size: 3rem;
     }
 
     .main__title{

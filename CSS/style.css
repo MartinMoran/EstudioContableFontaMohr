@@ -31,13 +31,12 @@ html {
   align-items: center; }
 
 .bigTitle--service {
-  color: #14149c;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .bigTitle--service1 {
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center; }
 
 /* -- fin styles para h1 -- */
@@ -137,6 +136,9 @@ html {
   background-color: #ffa07a;
   color: black;
   border: 2px solid black; }
+
+.btn--form:hover {
+  background-color: darkblue; }
 
 .header {
   background-color: whitesmoke; }
@@ -301,6 +303,17 @@ html {
 .mainAudit {
   background-color: lavender; }
 
+.heroBox {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.heroBox--Reg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3rem; }
+
 .audit__container {
   padding: 1rem; }
 
@@ -424,7 +437,7 @@ html {
   justify-content: flex-end;
   align-content: center; }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .companyLogo {
     height: 10rem; }
   .hero__title {
@@ -475,11 +488,13 @@ html {
   .audit__container--text {
     font-size: 2rem; }
   .bigTitle--service {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    margin: 1rem;
+    padding: 1rem; }
   .bigTitle--service1 {
     font-size: 2.5rem;
-    padding-top: 5rem;
-    align-items: flex-start; }
+    margin: 1rem;
+    padding: 1rem; }
   .smallTitle--left {
     font-size: 2.5rem; }
   .paratext {
@@ -586,9 +601,10 @@ html {
   .footerTitle {
     padding-top: 10px;
     padding-bottom: 1px; }
+  .bigTitle--service {
+    font-size: 3rem; }
   .bigTitle--service1 {
-    padding-top: 5rem;
-    align-items: flex-start; }
+    font-size: 3rem; }
   .main__title {
     font-size: 4rem;
     padding: 3rem; } }
