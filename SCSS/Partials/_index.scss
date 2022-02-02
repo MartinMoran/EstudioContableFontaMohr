@@ -19,25 +19,31 @@
     font-weight: bold;
     font-size: 4rem;
     color: black;
-    padding: 2rem;
+    padding: 1rem;
     position: absolute;
+    background-color: hsla(0deg, 0%, 100%, 0.5);
+    margin-left: 1rem;
     top: 8rem;
 }
 .hero__slogan{
     font-family: $fontRoboto;
     font-size: 2rem;
     color: #00008b;
-    padding: 2rem;
+    padding: 1rem;
+    margin-left: 1rem;
     position: absolute;
+    background-color: hsla(0deg, 0%, 100%, 0.5);
     top: 17rem;
 }
 .hero__paragraph{
     font-family: $fontRoboto;
     font-size: 2rem;
     color: white;
-    padding: 2rem;
+    padding: 1rem;
+    margin-left: 1rem;
     text-align: justify;
     position: absolute;
+    background-color: hsla(0deg, 0%, 0%, 0.5);
     top: 24rem;
 }
 
@@ -69,6 +75,7 @@
 }                                                   
 .mainAudit{
     background-color: lavender;
+    height: 1200px;
 }
 .heroBox{
     @include centrar
@@ -79,13 +86,9 @@
     align-items: flex-start;
     margin-top: 3rem;
 }
-.audit__container{
-    padding: 1rem;
-}
 .audit__container--text{
     font-family: $fontRoboto;
     font-size: 2.5rem;
-    padding: 1rem;
     margin-bottom: 0px;
     text-align: justify;
 }
@@ -93,9 +96,9 @@
     font-family: $fontRoboto;
     font-weight: bold;
     font-size: 2rem;
-    margin: 2rem 2rem 2rem 4rem;
+    margin: 1rem;
     padding: 1rem;
-    list-style: circle;
+    list-style: disc;
 }
 .service__item--text{
     font-family: $fontRoboto;
@@ -103,6 +106,7 @@
     font-size: 1.5rem;
     padding: 1rem;
     margin-top: 1rem;
+    text-align: justify;
 }
 
 @each $service in Audit, Counseling, PymeServices, Registration,  {

@@ -1,6 +1,6 @@
 @media screen and (max-width: 320px){
     .companyLogo{
-        height: 10rem;
+        height: 8rem;
     }
 
     .hero__title{
@@ -35,6 +35,47 @@
     .footer__paragraph{
         font-size: 8px;
     }
+
+    .mainAudit{
+        height: 1500px;
+    }
+
+    .audit__container2{
+        grid-row: 2 / span 2;
+        grid-column: 1 / span 10;
+    }
+
+    .audit__container3{
+        grid-row: 4 / span 2;
+        grid-column: 1 / span 10;
+    }
+
+    .audit__container4{
+        grid-row: 6 / span 2;
+        grid-column: 1 / span 10;
+    }
+
+    .audit__container5{
+        grid-row: 8 / span 2;
+        grid-column: 1 / span 10;
+    }
+
+    .audit__container2, .audit__container3, .audit__container4, .audit__container5{
+        margin: 0rem 3.5rem;
+    }
+
+    .audit__container--text{
+        font-size: 1.3rem;
+    }
+
+    .service__item{
+        font-size: 1.3rem;
+    }
+
+    .service__item--text{
+        font-size: 1.1rem;
+    }
+
 }
 
 @media screen and (max-width: 450px){
@@ -72,11 +113,7 @@
         margin-left: 1rem;
     }
     .audit__container{
-        padding: 1rem 2rem;
-    }
-
-    .audit__container--text{
-        font-size: 2rem;
+        padding: 1rem 1rem;
     }
 
     .bigTitle--service {
@@ -157,6 +194,46 @@
         .imgHeroService#{$service} {
             min-height: 350px;
         }                
+    }
+
+    .mainAudit{
+        height: 1500px;
+    }
+
+    .audit__container--text{
+        font-size: 1.4rem;
+    }
+
+    .audit__container2{
+        grid-row: 2 / span 2;
+        grid-column: 1 / span 10;
+    }
+
+    .audit__container3{
+        grid-row: 4 / span 2;
+        grid-column: 1 / span 10;
+    }
+
+    .audit__container4{
+        grid-row: 6 / span 2;
+        grid-column: 1 / span 10;
+    }
+
+    .audit__container5{
+        grid-row: 8 / span 2;
+        grid-column: 1 / span 10;
+    }
+
+    .audit__container2, .audit__container3, .audit__container4, .audit__container5{
+        margin: 1rem 3.5rem;
+    }
+
+    .service__item{
+        font-size: 1.4rem;
+    }
+
+    .service__item--text{
+        font-size: 1.2rem;
     }
 }
 
@@ -264,6 +341,22 @@
     .main__title{
         font-size: 4rem;
         padding: 3rem;
+    }
+
+    .audit__container--text{
+        font-size: 2rem;
+    }
+
+    .audit__container2, .audit__container3, .audit__container4, .audit__container5{
+        margin: 0rem 3.5rem;
+    }
+
+    .service__item{
+        font-size: 1.5rem;
+    }
+
+    .service__item--text{
+        font-size: 1.3rem;
     }
 }
 
