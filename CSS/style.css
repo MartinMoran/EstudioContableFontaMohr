@@ -236,7 +236,7 @@ html {
 .audit__container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(5, 10rem);
+  grid-template-rows: repeat(5, auto);
   grid-gap: 3rem;
   padding: 1rem; }
 
