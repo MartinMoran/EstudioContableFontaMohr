@@ -36,8 +36,14 @@
         font-size: 8px;
     }
 
-    .mainAudit{
-        height: 1800px;
+    .main__counseling, .main__pymeServices{
+        height: 1700px;
+    }
+    .main__audit{
+        height: 1650px;
+    }
+    .main__registration{
+        height: 1600px;
     }
 
     .audit__container2{
@@ -74,10 +80,6 @@
 
     .service__item--text{
         font-size: 1.1rem;
-    }
-
-    .footer__logo{
-        height: 8rem;
     }
 
 }
@@ -206,7 +208,10 @@
     .main__counseling, .main__pymeServices{
         height: 1700px;
     }
-    .main__registration, .main__audit{
+    .main__audit{
+        height: 1650px;
+    }
+    .main__registration{
         height: 1600px;
     }
 
