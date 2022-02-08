@@ -37,7 +37,7 @@
     }
 
     .mainAudit{
-        height: 1500px;
+        height: 1800px;
     }
 
     .audit__container2{
@@ -74,6 +74,10 @@
 
     .service__item--text{
         font-size: 1.1rem;
+    }
+
+    .footer__logo{
+        height: 8rem;
     }
 
 }
@@ -166,6 +170,7 @@
         justify-content: space-evenly;
     }
     .footer__logo {
+        height: 10rem;
         grid-area: footerLogo;
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
@@ -197,7 +202,7 @@
     }
 
     .mainAudit{
-        height: 1500px;
+        height: 1800px;
     }
 
     .audit__container--text{

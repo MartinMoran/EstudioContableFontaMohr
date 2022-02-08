@@ -526,7 +526,7 @@ html {
   .footer__paragraph {
     font-size: 8px; }
   .mainAudit {
-    height: 1500px; }
+    height: 1800px; }
   .audit__container2 {
     grid-row: 2 / span 2;
     grid-column: 1 / span 10; }
@@ -546,7 +546,9 @@ html {
   .service__item {
     font-size: 1.3rem; }
   .service__item--text {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .footer__logo {
+    height: 8rem; } }
 
 @media screen and (max-width: 450px) {
   .btn {
@@ -609,6 +611,7 @@ html {
     gap: 10px;
     justify-content: space-evenly; }
   .footer__logo {
+    height: 10rem;
     grid-area: footerLogo;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1; }
@@ -634,7 +637,7 @@ html {
   .imgHeroServiceRegistration {
     min-height: 350px; }
   .mainAudit {
-    height: 1500px; }
+    height: 1800px; }
   .audit__container--text {
     font-size: 1.4rem; }
   .audit__container2 {
