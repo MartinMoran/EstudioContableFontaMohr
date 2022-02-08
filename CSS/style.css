@@ -370,7 +370,7 @@ html {
   padding: 2rem;
   margin-bottom: 5rem; }
 
-.mainAudit {
+.main__counseling, .main__audit, .main__registration, .main__pymeServices {
   background-color: lavender;
   height: 1200px; }
 
@@ -551,6 +551,8 @@ html {
     height: 8rem; } }
 
 @media screen and (max-width: 450px) {
+  .companyLogo {
+    height: 10rem; }
   .btn {
     margin-bottom: 10px;
     bottom: 7rem; }
@@ -611,7 +613,6 @@ html {
     gap: 10px;
     justify-content: space-evenly; }
   .footer__logo {
-    height: 10rem;
     grid-area: footerLogo;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1; }
@@ -620,7 +621,7 @@ html {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1; }
   .footer__paragraph {
-    font-size: 12px; }
+    font-size: 10px; }
   .footer__container {
     grid-area: footerContainer;
     grid-column: 1 / span 2;
@@ -636,8 +637,10 @@ html {
     min-height: 350px; }
   .imgHeroServiceRegistration {
     min-height: 350px; }
-  .mainAudit {
-    height: 1800px; }
+  .main__counseling, .main__pymeServices {
+    height: 1700px; }
+  .main__registration, .main__audit {
+    height: 1600px; }
   .audit__container--text {
     font-size: 1.4rem; }
   .audit__container2 {

@@ -83,6 +83,9 @@
 }
 
 @media screen and (max-width: 450px){
+    .companyLogo{
+        height: 10rem;
+    }
     .btn{
         margin-bottom: 10px;
         bottom: 7rem;    
@@ -170,7 +173,6 @@
         justify-content: space-evenly;
     }
     .footer__logo {
-        height: 10rem;
         grid-area: footerLogo;
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
@@ -182,7 +184,7 @@
     }
 
     .footer__paragraph{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .footer__container{
@@ -201,8 +203,11 @@
         }                
     }
 
-    .mainAudit{
-        height: 1800px;
+    .main__counseling, .main__pymeServices{
+        height: 1700px;
+    }
+    .main__registration, .main__audit{
+        height: 1600px;
     }
 
     .audit__container--text{
