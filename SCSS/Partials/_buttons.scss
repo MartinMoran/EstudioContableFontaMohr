@@ -84,3 +84,9 @@ $hover: (
 .btn--form:hover{
     background-color: map-get($hover, colorDarkBlue);
 }
+
+.btn--thanks{
+    @extend .buttons;
+    display: flex;
+    justify-content: center;
+}

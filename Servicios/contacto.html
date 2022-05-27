@@ -59,39 +59,42 @@
     <main class="team">
         <h1 class="main__title tracking-in-contract">Envianos tu consulta</h1>
         <section class="contact">
-            <form class="form container">
+            <form class="form container" action="https://formsubmit.co/9334EF50E4930A45A0301670719D8CE9 " method="POST">
                 <div class="mb-3 col-lg-12">
                     <label for="formGroupExampleInput" class="form-label">Nombre Completo</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese sus nombres">
+                    <input type="text" name="Nombre" class="form-control" id="formGroupExampleInput" 
+                    placeholder="Ingrese sus nombres">
                 </div>
                 <div class="mb-3 col-lg-12">
                     <label for="formGroupExampleInput2" class="form-label">Apellido </label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su apellido">
+                    <input type="text" name="Apellido" class="form-control" id="formGroupExampleInput2" 
+                    placeholder="Ingrese su apellido">
                 </div>
                 <div class="mb-3 col-lg-12">
                     <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
+                    <input type="email" name="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
                     placeholder="Ingrese su email">
                 </div>
                 <div class="mb-3 col-lg-12">
                     <label for="exampleInputEmail1" class="form-label">Servicio</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select name="Servicio" class="form-select" aria-label="Default select example">
                         <option selected>Seleccione el Servicio</option>
-                        <option value="1">Asesoramiento</option>
-                        <option value="2">Inscripciones</option>
-                        <option value="3">Auditorias</option>
-                        <option value="4">Otros</option>
+                        <option value="Asesoramiento">Asesoramiento</option>
+                        <option value="Inscripciones">Inscripciones</option>
+                        <option value="Auditorias">Auditorias</option>
+                        <option value="Otros">Otros</option>
                     </select>
                 </div>
                 <div class="mb-3 col-lg-12">
                     <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <textarea name="Mensaje" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
                 <div class="mb-3 px-5 form-check col-lg-12">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <input type="checkbox" name="Checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
                 </div>
-                <button type="submit" class="btn--form btn-dark">Enviar</button>
+                <button type="submit" class="btn--form btn-dark" id="btnForm">Enviar</button>
+                <input type="hidden" name="_subject" value="Nuevo Contacto!">
             </form>
             <div class="container mapa justify-content-center">
                 <iframe class= "col-lg-12 col-md-10 col-sm-8 col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7890575751776!2d-58.42485068494825!3d
